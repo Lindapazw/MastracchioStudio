@@ -1,7 +1,14 @@
+// components
+import Header from './components/Header';
+import Hero from './components/Hero';
 
 
 export default function Home() {
   return (
-    <main>main</main>
+    <main className=''>
+      <Header/>
+      <Hero/>
+
+    </main>
   )
 }
