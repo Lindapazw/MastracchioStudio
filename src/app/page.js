@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 
 export default function Home() {
   return (
-    <main className=''>
+    <main className='max-w-[1920px] bg-white mx-auto relative overflow-hidden'>
       <Header/>
       <Hero/>
 
