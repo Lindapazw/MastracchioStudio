@@ -59,7 +59,13 @@ const Header = () => {
                         />
                     </Link>
                     {/* nav open menu */}
-                    <div>Menu</div>
+                    <div>
+                        {nav ? (
+                            <BiX className='text-4xl'/>
+                        ) : (
+                            <BiMenuAltRight className='text-4xl'/>
+                        )}
+                    </div>
                 </div>
             </div>
         </header>
