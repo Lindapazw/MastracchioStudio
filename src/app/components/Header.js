@@ -15,7 +15,8 @@ import SearchMobile from './SearchMobile';
 import {useMediaQuery} from 'react-responsive';
 
 // icons
-import {BiMenuAltRight, BiX} from 'react-icons/bi'
+import { BiMenuAltRight, BiX } from 'react-icons/bi';
+
 
 const Header = () => {
     const [header, setHeader] = useState(false);
@@ -45,7 +46,7 @@ const Header = () => {
     });
 
     return (
-        <header className={`${header ? 'bg-white shadow-md py-0' : 'bg-transparent shadow-none py-1'} fixed w-full max-w-[1920] mx-auto z-20 transition-all duration-300`}> 
+        <header className={`${header ? 'bg-white shadow-md py-0' : 'bg-transparent shadow-none py-1'} fixed w-full max-w-[1920] mx-auto z-20 transition-all duration-300`}>
             <div className='xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-center xl:justify-between'>
                 <div className='flex justify-between items-center px-4'>
                     {/* logo */}
@@ -59,7 +60,9 @@ const Header = () => {
                         />
                     </Link>
                     {/* nav open menu */}
-                    <div>
+                    <div 
+                    onClick={() => setNav(!nav)}
+                    className='cursor-pointer xl:hidden'>
                         {nav ? (
                             <BiX className='text-4xl'/>
                         ) : (
@@ -67,6 +70,8 @@ const Header = () => {
                         )}
                     </div>
                 </div>
+                {/* nav */}
+                <nav></nav>
             </div>
         </header>
     )
