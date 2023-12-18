@@ -1,8 +1,8 @@
-import React from 'react'
+"use client"
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <footer>Footer</footer>
     )
 }
 

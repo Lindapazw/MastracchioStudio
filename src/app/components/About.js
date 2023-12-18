@@ -15,7 +15,12 @@ return (
         <div className="container mx-auto">
             <div className="flex flex-col xl:flex-row xl:justify-between">
             {/* Image */}
-            <div className="p-2 xl:p-0">
+            <motion.div 
+            variants={fadeIn('up', 0.2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.6}}
+            className="p-2 xl:p-0">
                 <Image
                     src="/about/about.webp"
                     width={500}
@@ -25,7 +30,7 @@ return (
                     quality={80}
                     format="webp" 
                 />
-            </div>
+            </motion.div>
             {/* Text & Stats */}
             <div className="flex-1 flex items-center xl:justify-center">
                 <div className="xl:max-w-[517px]">
