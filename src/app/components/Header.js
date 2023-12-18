@@ -71,7 +71,15 @@ const Header = () => {
                     </div>
                 </div>
                 {/* nav */}
-                <nav></nav>
+                <nav className={`${nav? 'max-h-max py-8 px-4 xl:py-0 xl:px-0' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-8 xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}>
+                    <Link className='cursor-pointer' to='home' activeClass='active' smooth={desktopMode} spy={true}>Inicio</Link>
+                    <Link className='cursor-pointer' to='about' activeClass='active' smooth={desktopMode} spy={true}>Nosotros</Link>
+                    <Link className='cursor-pointer' to='testimonials' activeClass='active' smooth={desktopMode} spy={true}>Clientes</Link>
+                    <Link className='cursor-pointer' to='/' activeClass='active' smooth={desktopMode} spy={true}>Redes</Link>
+                    <Link className='cursor-pointer' to='/' activeClass='active' smooth={desktopMode} spy={true}>Link</Link>
+                    <Link className='xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto' to='/' activeClass='active' smooth={desktopMode} spy={true}> Contactanos </Link>
+                    <Link className='cursor-pointer' to='/' activeClass='active' smooth={desktopMode} spy={true}>Link</Link>
+                </nav>
             </div>
         </header>
     )
