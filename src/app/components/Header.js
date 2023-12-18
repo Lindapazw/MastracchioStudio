@@ -46,7 +46,7 @@ const Header = () => {
     });
 
     return (
-        <header className={`${header ? 'bg-white shadow-md py-0' : 'bg-transparent shadow-none py-1'} fixed w-full max-w-[1920] mx-auto z-20 transition-all duration-300`}>
+        <header className={`${header ? ' shadow-md ' : ' shadow-none '} bg-white py-0 fixed w-full max-w-[1920] mx-auto z-20 transition-all duration-300`}>
             <div className='xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-center xl:justify-between'>
                 <div className='flex justify-between items-center px-4'>
                     {/* logo */}
@@ -71,7 +71,7 @@ const Header = () => {
                     </div>
                 </div>
                 {/* nav */}
-                <nav className={`${nav? 'max-h-max py-8 px-4 xl:py-0 xl:px-0' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:flex-row xl:w-max xl:gap-x-8 xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}>
+                <nav className={`${nav? 'max-h-max py-8 px-4 xl:py-0 xl:px-0' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-bold xl:flex-row xl:w-max xl:gap-x-8 xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}>
                     <Link className='cursor-pointer' to='home' activeClass='active' smooth={desktopMode} spy={true}>Inicio</Link>
                     <Link className='cursor-pointer' to='about' activeClass='active' smooth={desktopMode} spy={true}>Nosotros</Link>
                     <Link className='cursor-pointer' to='testimonials' activeClass='active' smooth={desktopMode} spy={true}>Clientes</Link>
