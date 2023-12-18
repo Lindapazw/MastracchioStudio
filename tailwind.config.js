@@ -23,7 +23,8 @@ module.exports = {
         secondary: '#667085',
         accent: {
           default: '#ed1d24',
-          hover: 'dd242a'
+          hover: '#dd242a',
+          marron: '#A66021'
         },
         body: '#dedede',
       },
