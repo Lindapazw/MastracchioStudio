@@ -6,8 +6,11 @@ const Hero = () => {
                 autoPlay
                 muted
                 loop
+                playsInline  
+                preload="auto"
                 className="w-full h-full object-cover"
                 loading="lazy"
+                alt="Video de alta resolución mostrando arquitectura"
             >
                 <source src="/videos/chicaAlta.mp4" type="video/mp4" />
                 Tu navegador no soporta el elemento de video.
