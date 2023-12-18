@@ -83,6 +83,6 @@ p{
     @apply bg-accent-default hover:bg-accent-hover;
 }
 .active{
-    @apply text-accent-marron;
+    @apply border-b-2 border-black;
 }
 }
