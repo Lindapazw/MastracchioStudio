@@ -17,7 +17,7 @@ return (
             {/* Image */}
             <div className="p-2 xl:p-0">
                 <Image
-                    src="/about/3.png"
+                    src="/about/about.webp"
                     width={500}
                     height={418}
                     alt="about image"
