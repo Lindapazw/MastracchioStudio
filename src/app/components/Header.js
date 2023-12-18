@@ -52,7 +52,7 @@ const Header = () => {
             <div className='xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-center xl:justify-between'>
                 <div className='flex justify-between items-center px-4'>
                     {/* logo */}
-                    <Link to='home' smooth={desktopMode} spy={true} className='cursor-pointer border-none'>
+                    <Link href='#home' to='home' smooth={desktopMode} spy={true} className='cursor-pointer border-none'>
                     <Image
                         src="/logo/mastracchio_logo.png"
                         width={144}
