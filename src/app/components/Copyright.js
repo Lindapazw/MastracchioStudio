@@ -1,8 +1,10 @@
-import React from 'react'
+
 
 const Copyright = () => {
     return (
-        <div>Copyright</div>
+        <div className="text-center py-10 border-t text-sm">
+            Copyright &copy; Lindapazw 2023. Todos los derechjos reservados.
+        </div>
     )
 }
 
