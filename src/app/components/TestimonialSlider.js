@@ -25,29 +25,29 @@ import Image from 'next/image';
 // data
 const tetimonialData = [
     {
-        message: 'They truly exceeded my expectations and made my car rental experience a delight',
-        avatar: '/logo/mastracchio_logo.png',
-        name: 'Linda Paz',
-        job: 'Software developer',
+        message: 'Realmente superó mis expectativas y transformó mi experiencia en el diseño de interiores.',
+        avatar: '/logo/logoMAnegro.png',
+        name: 'María González',
+        job: 'Diseñadora de Interiores',
     },
     {
-        message: 'They truly exceeded my expectations and made my car rental experience a delight',
-        avatar: '/logo/mastracchio_logo.png',
-        name: 'Linda Paz',
-        job: 'Software developer',
+        message: 'Me inscribí en su curso de arquitectura, y fue revelador. Su estilo de enseñanza es atractivo e informativo.',
+        avatar: '/logo/logoMAnegro.png',
+        name: 'Martín López',
+        job: 'Entusiasta de la Arquitectura',
     },
     {
-        message: 'They truly exceeded my expectations and made my car rental experience a delight',
-        avatar: '/logo/mastracchio_logo.png',
-        name: 'Linda Paz',
-        job: 'Software developer',
+        message: 'Trabajar con ella en mi proyecto de renovación fue un placer. Tiene un ojo agudo para el detalle y la creatividad.',
+        avatar: '/logo/logoMAnegro.png',
+        name: 'Ana Rodríguez',
+        job: 'Propietaria de Casa',
     },
     {
-        message: 'They truly exceeded my expectations and made my car rental experience a delight',
-        avatar: '/logo/mastracchio_logo.png',
-        name: 'Linda Paz',
-        job: 'Software developer',
-    }
+        message: 'Asistir a su taller de arquitectura fue un cambio de juego para mí. Obtuvé conocimientos valiosos y prácticos.',
+        avatar: '/logo/logoMAnegro.png',
+        name: 'Juan Pérez',
+        job: 'Aspirante a Arquitecto',
+    },
 ]
 
 const TestimonialSlider = () => {
@@ -70,18 +70,18 @@ const TestimonialSlider = () => {
                     return (
                     <SwiperSlide key={index}>
                         <div className='flex flex-col justify-center items-center text-center'>
-                            <FaQuoteLeft className='text-5xl text-primary mb-6'/>
+                            <FaQuoteLeft className='text-6xl text-primary mb-6'/>
                             <div className='text-2xl xl:text-3xl max-w-[874px] mb-12 font-medium'>{message}</div>
-                            <Image 
-                                src={avatar} 
-                                width={104} 
-                                height={104} 
-                                alt='avatar de tertimoniales' 
-                                className='mb-4'
-                                loading="lazy"
-                                quality={80}
-                                format="webp" 
-                            />
+                                    <Image 
+                                        src={avatar} 
+                                        width={104} 
+                                        height={154} 
+                                        alt='avatar de tertimoniales' 
+                                        className='mb-4'
+                                        loading="lazy"
+                                        quality={80}
+                                        format="webp" 
+                                    />
                             <div className='text-lg font-medium'>{name}</div>
                             <div className='text-secondary'>{job}</div>
                         </div>
