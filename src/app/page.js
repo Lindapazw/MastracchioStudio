@@ -24,7 +24,6 @@ export default function Home() {
       <Contact/>
       <Footer/>
       <Copyright/>
-      <div className='h-[4000px]'></div>
     </main>
   )
 }
