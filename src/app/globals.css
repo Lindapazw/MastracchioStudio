@@ -83,6 +83,6 @@ p{
     @apply bg-accent-default hover:bg-accent-hover;
 }
 .active{
-    @apply border-b-2 border-black;
+    @apply xl:border-b-2 xl:border-black ;
 }
 }
