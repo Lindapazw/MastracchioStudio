@@ -79,7 +79,7 @@ const Header = () => {
                     <Link href='#home' className='cursor-pointer' to='home' activeClass='active' smooth={desktopMode} spy={true}>Inicio</Link>
                     <Link href='#about' className='cursor-pointer' to='about' activeClass='active' smooth={desktopMode} spy={true}>Mastracchio</Link>
                     <Link href='#services' className='cursor-pointer' to='services' activeClass='active' smooth={desktopMode} spy={true}>Servicios</Link>
-                    <Link href='#courses' className='cursor-pointer' to='courses' activeClass='active' smooth={desktopMode} spy={true}>Cursos</Link>
+                    <Link href='#courses' className='cursor-pointer' to='courses' activeClass='active' smooth={desktopMode} spy={true}>Mis trabajos</Link>
                     <Link href='#testimonial' className='cursor-pointer' to='testimonial' activeClass='active' smooth={desktopMode} spy={true}>Referencias</Link>
                     <Link href='#faqs' className='cursor-pointer' to='faqs' activeClass='active' smooth={desktopMode} spy={true}>Preguntas</Link>
                     <Link href='#contact' className='cursor-pointer' to='contact' activeClass='active' smooth={desktopMode} spy={true}>Contacto</Link>
