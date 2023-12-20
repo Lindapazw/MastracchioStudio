@@ -7,7 +7,6 @@ import Courses from './components/Courses';
 import Testimonial from './components/Testimonial';
 import Faqs from './components/Faqs';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 
 
@@ -22,7 +21,6 @@ export default function Home() {
       <Testimonial/>
       <Faqs/>
       <Contact/>
-      <Footer/>
       <Copyright/>
     </main>
   )
