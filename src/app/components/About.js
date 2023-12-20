@@ -16,7 +16,7 @@ return (
             <div className="flex flex-col xl:flex-row xl:justify-between">
             {/* Image */}
             <motion.div 
-            variants={fadeIn('up', 0.2)}
+            variants={fadeIn('up', 0.4)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.6}}
