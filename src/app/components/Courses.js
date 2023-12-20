@@ -14,21 +14,33 @@ const Courses = () => {
         <section className="section flex items-center" id="courses">
             <div className='container mx-auto xl:px-60 xxl:px-72'>
                 <div class="grid gap-4 grid-cols-2 xl:grid-cols-4 xxl:px-2">
-                    <div class="col-span-2 hover14 overflow-hidden">
+                    <motion.div 
+                    variants={fadeIn('right', 0.2)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.6}}
+                    className="col-span-2 hover14 overflow-hidden"
+                    >
                         <figure>                
                             <Image
-                                src="/cursos/25.png"
-                                width={400}
-                                height={318}
-                                alt="about image"
-                                loading="lazy"
-                                quality={95}
-                                format="webp"
-                                className="object-cover h-full w-full"
+                            src="/cursos/25.png"
+                            width={400}
+                            height={318}
+                            alt="about image"
+                            loading="lazy"
+                            quality={95}
+                            format="webp"
+                            className="object-cover h-full w-full"
                             />
                         </figure>
-                    </div>
-                    <div class="xl:col-span-2 hover14 overflow-hidden">
+                    </motion.div>
+                    <motion.div
+                    variants={fadeIn('down', 0.2)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.6}}
+                    className="xl:col-span-2 hover14 overflow-hidden"
+                    >
                         <figure className='h-full'>
                             <Image
                                 src="/cursos/15.png"
@@ -41,8 +53,14 @@ const Courses = () => {
                                 className="object-cover h-full w-full"
                             />
                         </figure>
-                    </div>
-                    <div class=" hover14 overflow-hidden">
+                    </motion.div>
+                    <motion.div 
+                    variants={fadeIn('left', 0.4)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.2}}
+                    className=" hover14 overflow-hidden"
+                    >
                         <figure className='h-full'>
                             <Image
                                 src="/cursos/20.png"
@@ -55,8 +73,14 @@ const Courses = () => {
                                 className="object-cover h-full w-full"
                             />
                         </figure>
-                    </div>
-                    <div className='hover14 overflow-hidden'>
+                    </motion.div>
+                    <motion.div 
+                    variants={fadeIn('left', 0.6)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.2}}
+                    className='hover14 overflow-hidden'
+                    >
                         <figure>
                             <Image
                                 src="/cursos/17.png"
@@ -69,8 +93,14 @@ const Courses = () => {
                                 className="object-cover h-full w-full"
                             />
                         </figure>
-                    </div>
-                    <div className='hover14 overflow-hidden'>
+                    </motion.div>
+                    <motion.div 
+                    variants={fadeIn('right', 0.6)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.2}}
+                    className='hover14 overflow-hidden'
+                    >
                         <figure>
                             <Image
                                 src="/cursos/21.png"
@@ -83,8 +113,14 @@ const Courses = () => {
                                 className="object-cover h-full w-full"
                             />
                         </figure>
-                    </div>
-                    <div className='hidden xl:block hover14 overflow-hidden'>
+                    </motion.div>
+                    <motion.div 
+                    variants={fadeIn('right', 0.4)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.2}}
+                    className='hidden xl:block hover14 overflow-hidden'
+                    >
                         <figure>
                             <Image
                                 src="/cursos/18.png"
@@ -97,7 +133,7 @@ const Courses = () => {
                                 className="object-cover h-full w-full"
                             />
                         </figure>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
